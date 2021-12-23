@@ -30,7 +30,7 @@ const Layout = ({ pageTitle, children }) => {
         <NavLink p={2}>
         <Link to="/blog" activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>blog</Link>
         </NavLink>
-        <Button ml="auto" bg="primary"><Link to="/social" >resume</Link></Button>
+        <Button ml="auto" bg="primary"><Link to="/social" sx={{color: 'white'}}>resume</Link></Button>
       </Flex>
       
       
