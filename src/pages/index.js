@@ -1,15 +1,16 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import * as React from 'react'
 import Layout from '/components/layout'
-import Greeting from '/components/greeting'
+import { Message } from 'theme-ui'
+
+
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-      <Greeting name="Mel" />
-      <Greeting name="Megan" />
-      <Greeting name="Generosa" />
-    </Layout>
+    <Layout pageTitle="Hello! I'm Mel">
+      <Message sx={{ fontWeight: 'bold'}}>A front end developer and UX designer.</Message>
+      </Layout>
   )
 }
 
