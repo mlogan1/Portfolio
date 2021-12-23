@@ -17,7 +17,50 @@ const Layout = ({ pageTitle, children }) => {
       <title>{pageTitle}</title>
 
       
-      <Flex as="nav">
+      <header
+  sx={{
+    display: 'flex',
+    alignItems: 'center',
+    variant: 'styles.header',
+  }}>
+  <Link
+    to="/"
+    sx={{
+      variant: 'styles.navlink',
+      p: 2,
+    }}>
+    Hello
+  </Link>  
+  <Link
+    to="/blog"
+    sx={{
+      variant: 'styles.navlink',
+      p: 2,
+    }}>
+    Blog
+  </Link>
+  <Link
+    to="/about"
+    sx={{
+      variant: 'styles.navlink',
+      p: 2,
+    }}>
+    About
+  </Link>  <Link
+    to="/about"
+    sx={{
+      variant: 'styles.navlink',
+      p: 2,
+    }}>
+    About
+  </Link>
+  <div sx={{ mx: 'auto' }} />
+
+
+  <Button ml="auto" bg="primary"><Link to="/social" sx={{color: 'white'}}>resume</Link></Button>
+</header>
+
+      {/* <Flex as="nav">
         <NavLink p={2}>
         <Link to="/"  activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>home</Link>
         </NavLink>
@@ -31,7 +74,7 @@ const Layout = ({ pageTitle, children }) => {
         <Link to="/blog" activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>blog</Link>
         </NavLink>
         <Button ml="auto" bg="primary"><Link to="/social" sx={{color: 'white'}}>resume</Link></Button>
-      </Flex>
+      </Flex> */}
       
       
       <main>
