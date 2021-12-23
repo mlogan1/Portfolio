@@ -25,65 +25,64 @@ const Layout = ({ pageTitle, children }) => {
   }}>
   <Link
     to="/"
+    activeClassName="active"
     sx={{
       variant: 'styles.navlink',
       p: 2,
+      textDecoration: 'none',
+      color: 'inherit', 
+      '&.active': { color: 'primary',fontWeight: 'bold', textDecoration: 'underline'}
     }}>
-    Hello
+    Home
   </Link>  
   <Link
-    to="/blog"
+    to="/projects"
+    activeClassName="active"
     sx={{
       variant: 'styles.navlink',
       p: 2,
+      textDecoration: 'none',
+      color: 'inherit', 
+      '&.active': { color: 'primary',fontWeight: 'bold',textDecoration: 'underline'}
     }}>
-    Blog
+    Projects
   </Link>
   <Link
-    to="/about"
+    to="/social"
+    activeClassName="active"
     sx={{
       variant: 'styles.navlink',
       p: 2,
+      textDecoration: 'none',
+      color: 'inherit', 
+      '&.active': { color: 'primary', fontWeight: 'bold',textDecoration: 'underline'}
     }}>
-    About
+    Social
   </Link>  <Link
-    to="/about"
+    to="/blog"
+    activeClassName="active"
     sx={{
       variant: 'styles.navlink',
       p: 2,
+      textDecoration: 'none',
+      color: 'inherit', 
+      '&.active': { color: 'primary',fontWeight: 'bold',textDecoration: 'underline'}
     }}>
-    About
+    Blog
   </Link>
   <div sx={{ mx: 'auto' }} />
 
 
-  <Button ml="auto" bg="primary"><Link to="/social" sx={{color: 'white'}}>resume</Link></Button>
+  <Button ml="auto" bg="primary"><Link to="/social" sx={{color: 'white', textDecoration: 'none'}}>Resume</Link></Button>
 </header>
-
-      {/* <Flex as="nav">
-        <NavLink p={2}>
-        <Link to="/"  activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>home</Link>
-        </NavLink>
-        <NavLink p={2}>
-        <Link to="/projects" activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>projects</Link>
-        </NavLink>
-        <NavLink p={2}>
-        <Link to="/social" activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>social</Link>
-        </NavLink>
-        <NavLink p={2}>
-        <Link to="/blog" activeClassName="active" sx={{ color: 'inherit', '&.active': { color: 'primary',}, }}>blog</Link>
-        </NavLink>
-        <Button ml="auto" bg="primary"><Link to="/social" sx={{color: 'white'}}>resume</Link></Button>
-      </Flex> */}
-      
-      
+    
       <main>
         <h1 sx={{ fontSize: '72px', letterSpacing: '-0.03em'}}>{pageTitle}</h1>
         {children}
       </main>
       
       <footer>
-        <p sx={{ paddingTop: '42px', fontSize: '13px', color: 'grey', marginBottom: '0px', paddingBottom: '0px'}}>This site was built with React, Gatsby, Contentful, GraphQL, and Theme UI.</p>
+        <p sx={{ paddingTop: '48px', fontSize: '13px', color: 'grey', marginBottom: '0px', paddingBottom: '0px'}}>This site was built with React, Gatsby, Contentful, GraphQL, and Theme UI.</p>
         
       </footer>
       <Divider sx={{ marginLeft: '0px'}}/>
