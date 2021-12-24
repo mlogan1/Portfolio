@@ -79,7 +79,7 @@ const Layout = ({ pageTitle, children }) => {
       <main>
         <h1 sx={{ fontSize: '72px', letterSpacing: '-0.03em'}}>{pageTitle}</h1>
         {children}
-      </main>
+        </main>
       
       <footer>
         <p sx={{ paddingTop: '48px', fontSize: '13px', color: 'grey', marginBottom: '0px', paddingBottom: '0px'}}>This site was built with React, Gatsby, Contentful, GraphQL, and Theme UI.</p>
