@@ -10,7 +10,7 @@ import { Paragraph } from 'theme-ui'
 const IndexPage = () => {
   return (
     <Layout pageTitle="Hello! I'm Mel">
-      <Message sx={{ fontWeight: 'bold'}}>A web developer and UX designer.</Message>
+      <Message sx={{ fontWeight: 'bold'}}>A front end developer and UX designer.</Message>
       <Paragraph variant="block" sx={{ paddingTop: '10px'}}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc elit,
         feugiat ut velit eget, pellentesque accumsan libero. Duis interdum ante sed
